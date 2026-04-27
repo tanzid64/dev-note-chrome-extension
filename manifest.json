@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "DevNotes",
+  "version": "1.0",
+  "description": "Quick credential notes with one-click copy",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  },
+  "permissions": ["storage"]
+}

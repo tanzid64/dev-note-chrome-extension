@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="logo">🔑</span>
+      <h1>DevNotes</h1>
+    </header>
+
+    <div class="add-form">
+      <input type="text" id="noteTitle" placeholder="Title  (e.g. Staging DB)" autocomplete="off" />
+      <textarea id="noteContent" placeholder="Content — paste credentials, tokens, URLs..." rows="3"></textarea>
+      <button id="saveBtn" class="btn btn-green">Save  <kbd>Ctrl+↵</kbd></button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="🔍  Filter notes..." autocomplete="off" />
+    </div>
+
+    <div id="notesList" class="notes-list"></div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
